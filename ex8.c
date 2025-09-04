@@ -1,10 +1,10 @@
 #include <stdio.h>
-
+#include <math.h>
 int main() {
-float a,b,c, Moy;
+float a,b,c, Moygeo;
 printf("entrer les nombres a,b et c:");
 scanf("%f%f%f",&a,&b,&c);
-Moy=(a*2+b*3+c*5)/(2+3+5);
-printf("%.2f",Moy);
+Moygeo=cbrt(a*b*c);
+printf("%f",Moygeo);
     return 0;
 }
