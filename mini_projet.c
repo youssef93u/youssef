@@ -2,31 +2,25 @@
 
 int main() {
     int i;
-float T,M;
+float T=0,M;
 float notes[5];
 float note_haute,note_basse;
 for(i=0;i<5;i++){
     printf(" notes[%d] :",i);
     scanf("%f",&notes[i]);
-}
-T=0;
-for(i=0;i<5;i++){
     T = T + notes[i];
+    if(i==0)
+    note_basse=note_haute=notes[i];
+    if(note_haute<notes[i])
+    note_haute = notes[i]; 
+     if(note_basse>notes[i])
+    note_basse = notes[i];   
 }
+
 printf(" total des notes %.2f:\n",T);
 M = T/5;
  printf(" la moyenne %.2f:\n",M);
- note_haute = notes[0];
- for(i=0;i<5;i++){
-     if(note_haute<notes[i])
-  note_haute = notes[i];  
-}
-  printf("la note_haute %f :\n",note_haute);
-   note_basse = notes[0];
- for(i=0;i<5;i++){
-     if(note_basse>notes[i])
-  note_basse = notes[i];  
-}
+printf("la note_haute %f :\n",note_haute);
   printf("la note_basse %f :\n",note_basse);
 if(M>=90) {
     printf("excellent\n");
