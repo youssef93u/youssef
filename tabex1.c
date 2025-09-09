@@ -18,5 +18,6 @@ int main()
 
    }
    printf("la somme est : %d",somme);
+   printf("la moyenne est : %.2f",(float)somme/5);
    return 0;
 }
