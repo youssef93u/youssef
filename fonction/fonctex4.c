@@ -1,19 +1,18 @@
 #include <stdio.h>
-int minimum(int a,int b){
-    if(a<b)
-return a;
-else
-    return b;
+
+int Min(int a, int b) {
+    if(a<b){
+    return a; 
+    }else{
+    return b;}
 }
-int main(){
-     int x, y;
-printf("entre la valeur de x :");
-scanf("%d",&x);
-printf("entre la valeur de y :");
-scanf("%d",&y);
-minimum(x,y);
-printf("le produit :%d ",minimum(x,y) );
-
-
-return 0;
+int main() {
+    int x, y, resultat;
+    printf("Entrez le premier nombre : ");
+    scanf("%d", &x);
+    printf("Entrez le deuxieme nombre : ");
+    scanf("%d", &y);
+    resultat = Min(x, y);
+    printf("Le max %d et %d : %d\n",x,y,resultat);
+    return 0;
 }

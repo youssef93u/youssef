@@ -1,19 +1,18 @@
 #include <stdio.h>
-int maximum(int a,int b){
-    if(a>b)
-return a;
-else
-    return b;
+
+int Max(int a, int b) {
+    if(a>b){
+    return a; 
+    }else{
+    return b;}
 }
-int main(){
-     int x, y;
-printf("entre la valeur de x :");
-scanf("%d",&x);
-printf("entre la valeur de y :");
-scanf("%d",&y);
-maximum(x,y);
-printf("le produit :%d ",maximum(x,y) );
-
-
-return 0;
+int main() {
+    int x, y, resultat,max;
+    printf("Entrez le premier nombre : ");
+    scanf("%d", &x);
+    printf("Entrez le deuxieme nombre : ");
+    scanf("%d", &y);
+    resultat = Max(x, y);
+    printf("Le max %d et %d : %d\n",x,y,resultat);
+    return 0;
 }
