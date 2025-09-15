@@ -16,7 +16,7 @@ int main() {
     printf("Nom : ");
     scanf("%s", e.nom);  
 
-    printf("Prénom : ");
+    printf("Prenom : ");
     scanf("%s", e.prenom);
 
     printf("Entrez %d notes :\n", N_note);
@@ -28,10 +28,10 @@ int main() {
     // Affichage
     printf("\n=== Fiche Étudiant ===\n");
     printf("Nom    : %s\n", e.nom);
-    printf("Prénom : %s\n", e.prenom);
+    printf("Prenom : %s\n", e.prenom);
     printf("Notes  : ");
     for(i = 0; i < N_note; i++) {
-        printf("%d ", e.notes[i]);
+        printf("\n%d\n ", e.notes[i]);
     }
     printf("\n");
 
